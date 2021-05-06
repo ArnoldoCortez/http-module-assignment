@@ -30,8 +30,8 @@ const NumberResources = (req, res) => {
       methods[method](req, res);
     }
   } else {
-    res.statusCode = 400;
-    res.end(JSON.stringify({message: 'The method is not valid for this path!!!'}));
+    res.statusCode = 404;
+    res.end(JSON.stringify({message: 'Resource not found!!!'}));
   }
 };
 

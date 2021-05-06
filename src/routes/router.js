@@ -16,7 +16,7 @@ const myRouter = (req, res) => {
   } else {
     res.statusCode = 404;
     res.end(JSON.stringify({
-      message: "Path not found",
+      message: "Resource not found",
     }));
   }
 };
